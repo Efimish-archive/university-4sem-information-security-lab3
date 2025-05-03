@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Протокол Диффи-Хеллмана</title>
+  <link rel="icon" href="https://www.svgrepo.com/show/484589/watermelon-part-3.svg">
+  <style>
+    * {
+      margin: 0;
+    }
+
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      max-width: 768px;
+      margin: 2em auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      font-size: 24px;
+    }
+
+    section {
+      width: 100%;
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      & > * {
+        white-space: nowrap;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    input {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Протокол Диффи-Хеллмана</h1>
+  <section>
+    <h2>p</h2>
+    <input disabled placeholder="p" id="p">
+    <button id="get-p">Получить</button>
+  </section>
+  <section>
+    <h2>g</h2>
+    <input disabled placeholder="g" id="g">
+    <button id="get-g">Получить</button>
+  </section>
+  <section>
+    <h2>a</h2>
+    <input disabled placeholder="a" id="a">
+    <button id="get-a">Получить</button>
+  </section>
+  <section>
+    <h2>b</h2>
+    <input disabled placeholder="b" id="b">
+    <button id="get-b">Получить</button>
+  </section>
+  <section>
+    <h2>A</h2>
+    <input disabled placeholder="A" id="A">
+    <button id="get-A">Получить</button>
+  </section>
+  <section>
+    <h2>B</h2>
+    <input disabled placeholder="B" id="B">
+    <button id="get-B">Получить</button>
+  </section>
+  <section>
+    <h2>Число Алисы</h2>
+    <input disabled placeholder="alice" id="alice">
+    <button id="get-alice">Получить</button>
+  </section>
+  <section>
+    <h2>Число Боба</h2>
+    <input disabled placeholder="bob" id="bob">
+    <button id="get-bob">Получить</button>
+  </section>
+
+  <script type="module" src="src/main.ts"></script>
+</body>
+
+</html>
