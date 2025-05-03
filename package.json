@@ -1,5 +1,5 @@
 {
-  "name": "rsa-cipher",
+  "name": "diffie-hellman",
   "module": "src/main.ts",
   "type": "module",
   "scripts": {
